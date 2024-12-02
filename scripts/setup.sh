@@ -14,7 +14,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Obtener la región configurada en AWS CLI
-REGION=$(aws configure get region)
+REGION=eu-west-1
 if [ -z "$REGION" ]; then
     echo "No se pudo obtener la región de AWS. Verifica tu configuración."
     exit 1
